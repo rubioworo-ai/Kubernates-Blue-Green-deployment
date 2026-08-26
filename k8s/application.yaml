@@ -20,7 +20,7 @@ spec:
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: rollouts-demo-app
+  name: rollouts-demo-blue-green
   namespace: argocd
 spec:
   project: rollout-demo-project
