@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Rollout
 metadata:
   name: canary-demo
-  namespace: default
+  namespace: dev
 spec:
   replicas: 4
   selector:
