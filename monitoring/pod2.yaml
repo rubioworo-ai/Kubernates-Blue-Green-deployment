@@ -9,7 +9,7 @@ spec:
     targetPort: 8080
     name: http
   selector:
-    app: multi-svc-canary
+    app: canary-demo
 ---
 apiVersion: v1
 kind: Service
@@ -22,4 +22,4 @@ spec:
     targetPort: 8080
     name: http
   selector:
-    app: multi-svc-canary
+    app: canary-demo
