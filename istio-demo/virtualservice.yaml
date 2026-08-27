@@ -1,0 +1,18 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: my-app-vservice
+  namespace: dev
+spec:
+  hosts:
+  - my-app-svc
+  http:
+  - route:
+    - destination:
+        host: my-app-svc
+        subset: v1
+      weight: 80
+    - destination:
+        host: my-app-svc
+        subset: v2
+      weight: 20
