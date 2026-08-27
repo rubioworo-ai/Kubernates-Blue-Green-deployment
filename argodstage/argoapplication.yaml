@@ -1,10 +1,10 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: rollouts-demo-app
+  name: rollouts-demo
   namespace: argocd
 spec:
-  project: rollout-demo-project
+  project: rollout-demo
   source:
     repoURL: https://github.com/rubioworo-ai/Kubernates-Blue-Green-deployment.git
     targetRevision: main

@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
-  name: rollout-demo-project
+  name: rollout-demo
   namespace: argocd
 spec:
   description: Project for practicing progressive Canary and Blue-Green rollouts
