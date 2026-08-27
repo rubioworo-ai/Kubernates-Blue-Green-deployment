@@ -15,7 +15,7 @@ spec:
     spec:
       containers: 
       - name: web-app
-        image: argoproj/rollouts-demo:yellow
+        image: argoproj/rollouts-demo:green
         ports:
         - containerPort: 8080 
 ---
