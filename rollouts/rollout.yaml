@@ -6,6 +6,7 @@ metadata:
   namespace: stage 
 
 spec:
+  replicas: 5
   workloadRef:
     apiVersion: apps/v1 
     kind: Deployment
