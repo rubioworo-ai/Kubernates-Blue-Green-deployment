@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: web
-        image: quay.io/ubiowororuki/demo-app:latest
+        image: rukevweubio/myclone-netflix-app:latest
         ports:
         - containerPort: 80
 
