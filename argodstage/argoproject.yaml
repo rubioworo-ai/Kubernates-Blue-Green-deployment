@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: rollout-demo-project
+  namespace: argocd
+spec:
+  description: Project for practicing progressive Canary and Blue-Green rollouts
+  sourceRepos:
+  - 'https://github.com/rubioworo-ai/Kubernates-Blue-Green-deployment.git'
+  destinations:
+
+  - namespace: stage
+    server: https://kubernetes.default.svc
+ 
+  - namespace: argocd
+    server: https://kubernetes.default.svc
+  clusterResourceWhitelist:
+  - group: '*'
+    kind: '*'
