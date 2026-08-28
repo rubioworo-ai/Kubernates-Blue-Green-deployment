@@ -13,24 +13,3 @@ spec:
       protocol: HTTP
     hosts:
     - "*"
----
-apiVersion: networking.istio.io/v1alpha3
-kind: VirtualService
-metadata:
-  name: my-app-vservice
-  namespace: dev
-spec:
-  hosts:
-  - "*"
-  gateways:
-  - my-app-gateway
-  http:
-  - route:
-    - destination:
-        host: my-app-svc
-        subset: v1
-      weight: 0
-    - destination:
-        host: my-app-svc
-        subset: v2
-      weight: 100
