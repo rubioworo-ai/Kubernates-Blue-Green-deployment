@@ -9,7 +9,7 @@ spec:
   - 'https://github.com/rubioworo-ai/Kubernates-Blue-Green-deployment.git'
   destinations:
 
-  - namespace: stage
+  - namespace: dev
     server: https://kubernetes.default.svc
  
   - namespace: argocd
