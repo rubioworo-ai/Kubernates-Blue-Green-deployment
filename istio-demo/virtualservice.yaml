@@ -11,8 +11,8 @@ spec:
     - destination:
         host: my-app-svc
         subset: v1
-      weight: 80
+      weight: 20
     - destination:
         host: my-app-svc
         subset: v2
-      weight: 20
+      weight: 80
