@@ -8,10 +8,10 @@ spec:
   source:
     repoURL: https://github.com/rubioworo-ai/Kubernates-Blue-Green-deployment.git
     targetRevision: main
-    path: rollouts/ 
+    path: istio-demo/ 
   destination:
     server: https://kubernetes.default.svc
-    namespace: stage
+    namespace: dev
   syncPolicy:
     automated:
       prune: true
