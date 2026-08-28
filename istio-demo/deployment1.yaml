@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: web
-        image: rukevweubio/myclone-netflix-app:latest
+        image: rukevweubio/mario-game-ubio:latest 
         ports:
         - containerPort: 80
 
